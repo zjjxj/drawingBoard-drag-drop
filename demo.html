@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #choice1 div{
+            width: 50px;
+            height: 50px;
+        }
+        #show{
+            position: absolute;
+            width: 70%;
+            height: 600px;
+            top: 0px;
+            right: 10px;
+            margin-top: 20px;
+            border: 5px solid gainsboro;
+            border-radius: 10px;
+
+        }
+        #show div{
+            transition: all 1s linear;
+            /*position: absolute;*/
+        }
+        #choice1{
+            padding: 10px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: darkgrey;
+            position: absolute;
+            left: 150px;
+            top:80px;
+        }
+        #shape1{
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+            border: 1px solid black;
+        }
+        #shape2{
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+        }
+        #shape3{
+            width: 80px;
+            height: 160px;
+            border: 1px solid black;
+        }
+        #shape5{
+            position: relative;
+            width: 0;
+            height: 0;
+            border: 40px solid;
+            border-right-color:transparent;
+            border-bottom-color: transparent;
+        }
+        #shape4{
+            width: 0px;
+            height: 0px;
+            border-radius: 80px;
+            border: 40px solid;
+            border-right-color:transparent;
+            border-bottom-color: transparent;
+        }
+        #choice2 div{
+          margin-bottom: 10px;
+        }
+        #choice2{
+            padding: 10px;
+            width: 80px;
+            border-radius: 10px;
+            border: 1px solid black;
+            top: 10px;
+            left: 120px;
+        }
+        span{
+            font-size: larger;
+        }
+    </style>
+    <script src="EventUtil.js"></script>
+</head>
+<body>
+    <h2>please choice shape first!</h2>
+    <div id="choice2">
+         shape
+        <div id="shape1" draggable="true"></div>
+        <div id="shape2" draggable="true"></div>
+        <div id="shape3" draggable="true"></div>
+        <div id="shape4" draggable="true"></div>
+        <div id="shape5" draggable="true"></div>
+    </div>
+    <div id="choice1">
+        color
+        <div id="red" draggable="true"></div>
+        <div id="green" draggable="true"></div>
+        <div id="black" draggable="true"></div>
+        <div id="yellow" draggable="true"></div>
+        <div id="white" draggable="true"></div>
+        <div id="pink" draggable="true"></div>
+        <div id="orange" draggable="true"></div>
+        <div id="purple" draggable="true"></div>
+        <div id="lightskyblue" draggable="true"></div>
+        <div id="blue" draggable="true" ></div>
+    </div>
+
+    <div id="show">
+        <h1>Drawing Board</h1>
+    </div>
+    <script src="demo.js"></script>
+
+</body>
+</html>
